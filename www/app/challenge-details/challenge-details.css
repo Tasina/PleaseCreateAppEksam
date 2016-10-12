@@ -1,0 +1,361 @@
+/*Top box(all pages)*/
+
+.wraper-div {
+  margin: 0!important;
+}
+
+
+.idea-box {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  max-width: 40%;
+  height: auto;
+  display: inline-block;
+  margin: 0 2.5% 10% 2.5%!important;
+  padding: 0!important;
+  overflow: hidden;
+}
+
+.idea-image {
+  height: 100%;
+  overflow: hidden;
+  margin: 0 0 10px 0!important;
+  padding: 0!important;
+}
+
+.idea-image img {
+  min-width: 100%;
+  max-height: 150px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  padding: 0!important;
+}
+
+.idea-text p {
+  color: dimgray;
+  font-size: 120%;
+  overflow: hidden;
+  line-height: 2.5ex;
+  height: 7.5ex;
+  border-bottom: 1px solid lightgray;
+  margin: 0;
+}
+
+.text-box{
+  padding-bottom: 5px;
+}
+
+i.heart, i.bulb {
+  font-size: 200%!important;
+  position: relative;
+  z-index: 107;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.icons-box span {
+  color: dimgray;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 65%;
+  text-shadow: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*Full page*/
+.wrapper2 {
+  background-color: white;
+  height: auto!important;
+  min-height: 120%!important;
+  padding-bottom: 15%;
+}
+
+/*Headline image*/
+.top {
+  width: auto;
+
+}
+
+.image-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.full-image{
+  position: relative;
+  z-index: 105;
+  min-width: 100%;
+  min-height: 220px;
+  max-height: 220px;
+}
+
+.image-wrapper img {
+  object-fit: cover;
+}
+
+/*Challenge name box*/
+.challenge-name {
+  position: relative;
+}
+
+.wrapper2 h4 {
+  margin-top: -35px;
+  text-align: center;
+  font-size: 150%;
+  color: dimgray!important;
+}
+
+#challenge-navbar {
+  border: none;
+  text-decoration: none;
+}
+
+
+
+
+/*Ideas - plus icon*/
+.idea-div {
+  background-color: white;
+  position: relative;
+  z-index: 104;
+  color: dimgrey;
+  text-align: center;
+  border-top: 1px solid dimgrey;
+}
+
+.idea-div {
+  height: 60%;
+  width: 100%;
+  overflow: scroll;
+}
+
+
+
+/**/
+.positionate {
+  position: relative;
+}
+
+
+
+
+/*create-idea*/
+#create-idea {
+  width: 100%;
+  margin-bottom: 15%;
+  font-size: 250%;
+}
+
+/*add*/
+.add {
+  z-index: 105;
+  top: -30px!important;
+  margin-top: 10%;
+  position: absolute;
+  right: 10px;
+  color: #BAC8AA;
+  float: right;
+}
+
+/*single-idea*/
+.single-idea {
+  border: 1px solid dimgrey;
+  margin: 4%;
+  width: 40%;
+  height: 30%;
+  display: inline-block;
+  background: white;
+  border-radius: 3px;
+}
+
+.idea-box {
+  width: 100%;
+}
+
+/*bg-box2*/
+.bg-box2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 107;
+  margin: 0!important;
+  padding: 0!important;
+  overflow: visible;
+  border-radius: 5px 5px 0 0;
+  line-height: 0!important;
+}
+
+/*bg-image2*/
+.bg-image2 {
+  position: relative;
+  z-index: 105;
+  min-width: 100%;
+  max-height: 150px;
+}
+
+.bg-image2 img {
+  object-fit: cover;
+}
+
+.topic-box2 {
+  position: relative;
+  z-index: 108;
+  left: -100px;
+}
+
+/*idea-headline*/
+.idea-headline {
+  position: relative;
+  z-index: 106;
+  color: dimgrey;
+}
+
+/*Description - container*/
+.details-content {
+  height: 100%;
+}
+
+/*Description - text*/
+.detailsDiv p {
+  color: dimgray;
+}
+
+/*Description - text top line*/
+.detailsDiv {
+  border-top: 1px solid dimgrey;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+}
+
+/*Description - Text padding/margin*/
+#c-detail-row{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 60%;
+}
+
+/*bottom menu*/
+.tab-title {
+  font-size: 150%;
+}
+
+.tab-title a {
+  color: white!important;
+}
+
+
+
+.tabs {
+  height: auto!important;
+  padding: 5% 0!important;
+  line-height: 250%!important;
+  background: dimgrey!important;
+  text-transform: uppercase;
+  position: absolute;
+  text-decoration: none!important;
+  bottom: 0!important;
+}
+
+a span {
+  color: #BAC8AA;
+}
+
+span:active {
+  color: #BAC8AA;
+}
+
+
+/*Gallery - Image Gallery*/
+.images-div {
+  height: auto;
+  margin-bottom: 100%;
+  color: dimgrey;
+  text-align: center;
+  border-top: 1px solid dimgrey;
+  background-color: white;
+}
+
+.images-div h5 {
+  color: dimgrey;
+}
+
+.images-div {
+  width: 100%;
+  overflow: scroll;
+}
+
+.image-order {
+  position: relative;
+  margin-left: 7.5%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.image {
+  width: 40%;
+  min-height: 50%;
+  float: left;
+  margin: 5% 5% 5px 0;
+  border: 5px solid white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:  2px 2px 8px rgba(0, 0, 0, 0.5);
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.image img {
+  border-radius: 3px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/*Gallery - Image pop-up*/
+.transparent {
+  background: rgba(0,0,0,0.7)!important;
+}
+
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.image-pic {
+  width: 45%
+}
+
+.transparent img {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+
+/* Fix modal backdrop for smaller devices */
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}

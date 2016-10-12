@@ -1,0 +1,37 @@
+<ion-view view-title="ChallengeIdeas" name="tab-ideas">
+  <ion-content class="details-content" >
+
+    <div class="wrapper2 color-changes">
+      <challenge-top></challenge-top>
+      <div class="idea-div positionate">
+        <h4>Ideas</h4>
+        <div id="create-idea">
+          <icon ng-click="createIdea()" class="add ion-ios-plus"></icon>
+        </div>
+
+        <div class="wrapper-div">
+        <div class="idea-box row" ng-repeat="idea in challenge.Ideas" ng-click="goToIdea(idea.id)">
+          <div class="idea-image row">
+            <img class="image-box col" ng-src="{{idea.image_url}}">
+          </div>
+          <div class="idea-text row">
+            <div class="text-box col">
+              <p class="text-p">{{idea.fancy_title}}</p>
+            </div>
+          </div>
+          <div class="idea-icons row">
+            <div class="icons-box col">
+              <i class="heart icon-heart-color"><span>&nbsp;{{idea.like_count}}</span></i>
+            </div>
+            <div class="icons-box col">
+              <i class="bulb icon-chat-singel-color"><span>&nbsp;{{idea.posts_count}}</span></i>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        </div>
+      </div>
+
+  </ion-content>
+</ion-view>

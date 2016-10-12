@@ -1,0 +1,122 @@
+body, html {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.pane {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: right bottom;
+}
+
+#headline {
+  padding-top: 22%;
+}
+
+.popup-buttons .button {
+border-radius: 1em;
+}
+.popup-buttons .button.button-positive {
+background: #b4c49f;
+}
+
+.spinner-android{
+  display: none;
+  visibility: hidden;
+  stroke: transparent;
+}
+
+.fatText label {
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  font-family: Arial;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 230%;
+  letter-spacing: 1px;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  font-family: Arial !important;
+  color: white;
+}
+
+a {
+  color: white!important;
+}
+
+#terms {
+  font-family: Arial;
+  font-size: 80%;
+  text-align: center;
+}
+
+.btnGenerel {
+  color: grey;
+  border: none;
+  border-radius: 1.4em;
+}
+
+.item-input {
+  border: none;
+  background: none;
+  border-bottom: 1px white solid;
+}
+
+.dragLeft {
+  text-align: left;
+}
+
+.dragRight {
+  text-align: right;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.roundedCorners {
+  border-radius: 0.2em;
+}
+
+.greenFontColor {
+  color: #BAC8AA;
+}
+
+.botNav {
+  width: 100%;
+  border-top: 1px solid white;
+  position: fixed;
+  z-index: 10;
+  height: 5%;
+  bottom: 0;
+  color: white;
+
+}
+
+.loading{
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  padding-top: 70% !important;
+  height: 100%;
+}
+
+.spinner svg{
+  height: 7em;
+  width: 7em;
+  fill: #BAC8AA;
+}
+
+
+#refreshSpinner .spinner svg{
+  height: 100%;
+  width: 7%;
+  stroke: #FFFFFF;
+}

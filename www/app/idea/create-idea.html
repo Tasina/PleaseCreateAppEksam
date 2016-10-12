@@ -1,0 +1,29 @@
+<ion-view>
+  <ion-content>
+
+    <div class="profileInfo">
+
+      <div class="row newHeader">
+        <div class="col-20">
+          <i id="back" class="icon-arrow-left" ng-click="goBack()"></i>
+        </div>
+        <div class="front col">
+          <h1 class="please"><span style="letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">NEW</span><span style="font-weight: 500; letter-spacing: -2px;">IDEA</span></h1>
+        </div>
+        <div class="col-20"></div>
+      </div>
+    </div>
+
+    <div class="ai-div">
+      <h4>Title</h4>
+      <input ng-model="newIdea.title" class="ai-title" type="text">
+      <h4>Describe your idea here</h4>
+      <textarea ng-model="newIdea.raw" class="ai-textarea"></textarea>
+    </div>
+
+    <div id="edit-container-4" class="row">
+      <button ng-click="createIdea()" class="button" id="save-edit">ADD IDEA</button>
+    </div>
+
+  </ion-content>
+</ion-view>

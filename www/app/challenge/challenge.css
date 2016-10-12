@@ -1,0 +1,321 @@
+.scroll-content {
+  /*padding: 0 0 20% 0;*/
+}
+#c-card {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1em;
+  margin-top: 1em;
+}
+#ch-top{
+  border-bottom: 1px solid white;
+}
+.c-finished{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.8) !important;
+}
+.image-opacity3 {
+  opacity: 1;
+}
+.image-opacity2 {
+  opacity: 0.2;
+}
+.image-opacity {
+  opacity: 0;
+}
+.ended-box {
+  position: absolute;
+  width: 100%;
+}
+.ended-text {
+  width: 80%;
+  font-size: 180%;
+  margin: 0 auto;
+}
+.list {
+  background-color: transparent;
+}
+.please {
+  font-size: 20px;
+}
+.bgNone {
+  opacity: 0;
+}
+.challenge-wrapper {
+  margin-top: 10%;
+  width: 100%!important;
+}
+#PCheader {
+  width: 100%;
+}
+.challenge-box {
+  position: relative;
+  z-index: 19000;
+  width: 75%!important;
+  margin: 0 auto;
+  border-radius: 5px 5px 5px 5px!important;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+.challenge-bg {
+  position: relative;
+  z-index: 19000;
+  height: 100%;
+  margin: 0!important;
+  padding: 0!important;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  line-height: 0!important;
+}
+.bg-image {
+  position: relative;
+  z-index: 105;
+  min-width: 100%;
+  max-height: 200px;
+}
+.bg-text {
+  position: relative;
+  z-index: 107;
+  color: white!important;
+  font-family: Arial;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: #FCC259;
+  padding: 15px 10px;
+  width: 100px;
+  height: auto;
+  top: -15px;
+  border-radius: 0 40px 40px 0;
+  font-size: 100%;
+  text-align: right;
+}
+.challenge-bg img {
+  object-fit: cover;
+}
+.challenge-logo {
+  width: 35%;
+  max-height: 30%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  border-bottom: 2px solid dimgray;
+}
+.logo-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.name-font {
+  color: dimgray;
+  font-size: 100%;
+  padding: 3% 15% 6% 15%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ideas, .star, .clock {
+  font-size: 18px!important;
+  color: lightgray;
+}
+.ideas span, .star span, .clock span {
+  font-size: 80%!important;
+  color: lightgray;
+  font-family: Arial;
+  display: table-cell;
+  vertical-align: middle;
+}
+.topic-box {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3% 5%;
+}
+.topic-text1 {
+  text-align: left;
+}
+.topic-text2 {
+  text-align: center;
+}
+.topic-text3 {
+  text-align: right;
+}
+.floatRight {
+  float: right;
+}
+#challenge-card {}
+#challenge-type-div {
+  padding: 0;
+  width: 75%;
+  margin: 5% auto 0 auto;
+  border-radius: 40px;
+  text-align: center;
+}
+.public {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 40px 0 0 40px;
+}
+.private {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 40px 40px 0;
+}
+#challenge-type-div a {
+  color: #90a871;
+  text-decoration: none;
+}
+.a-right {
+  border-left: 1px solid #90a871;
+}
+
+/*Introduktion*/
+
+.introduktion {
+  background-color: #BAC8AA;
+  height: 100%;
+  margin: 3%;
+}
+.intro-header {
+  padding-top: 20%;
+}
+.intro-body {
+  padding: 7%;
+  background-color: #BAC8AA;
+}
+.title-text {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: block;
+  border-bottom: 1px solid lightgray !important;
+}
+
+/*----------------- loading -------------- */
+
+.loading {
+  background: none;
+  width: 100% !important;
+  border-width: 2px !important;
+  border-color: black !important;
+  border-style: solid !important;
+}
+.loading-backdrop {
+  margin-top: 44px;
+  /*loading should stay under the header*/
+  background-color: rgb(237, 240, 241);
+}
+
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active,
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+  border: 2px solid dimgray!important;
+}
+
+/*--------------------Media Query--------------------*/
+
+
+/*************************************** Galaxy S7 (Landscape) ***************************************/
+
+@media screen and (max-width: 2560px) {
+  .challenge-wrapper {
+    width: 50%!important;
+    float: left;
+    min-height: 850px;
+  }
+  .challenge-box {
+    width: 60%!important;
+  }
+}
+
+/*************************************** Galaxy S7 ***************************************/
+
+@media screen and (max-width: 1440px) {
+  .challenge-wrapper {
+    width: 100%!important;
+  }
+  .challenge-box {
+    width: 70%!important;
+  }
+}
+
+/*************************************** iPad/iPad Mini (Landscape) ***************************************/
+
+@media screen and (max-width: 1024px) {
+  .challenge-wrapper {
+    width: 50%!important;
+    float: left;
+    min-height: 550px;
+  }
+  .challenge-box {
+    width: 70%!important;
+  }
+}
+
+/*************************************** iPad/iPad Mini ***************************************/
+
+@media screen and (max-width: 768px) {
+  .challenge-wrapper {
+    width: 50%!important;
+    float: left;
+    min-height: 520px;
+  }
+  .challenge-box {
+    width: 80%!important;
+  }
+}
+
+/*************************************** iPhone 6Plus (Landscape) ***************************************/
+
+@media screen and (max-width: 736px) {}
+
+/*************************************** Nexus 5X (Landscape) ***************************************/
+
+@media screen and (max-width: 732px) {}
+
+/*************************************** Galaxy S5 (Landscape) ***************************************/
+
+@media screen and (max-width: 640px) {}
+
+/*************************************** iPhone 5 (Landscape) ***************************************/
+
+@media screen and (max-width: 568px) {
+  .challenge-wrapper {
+    width: 100%!important;
+  }
+  .challenge-box {
+    width: 70%!important;
+  }
+}
+
+/*************************************** iPhone 4 (Landscape) ***************************************/
+
+@media screen and (max-width: 480px) {}
+
+/*************************************** iPhone 6 Plus ***************************************/
+
+@media screen and (max-width: 414px) {
+  .challenge-wrapper {
+    width: 100%!important;
+    min-height: 0;
+  }
+  .challenge-box {
+    width: 80%!important;
+  }
+}
+
+/*************************************** Nexus X5/Nexus 6P ***************************************/
+
+@media screen and (max-width: 412px) {}
+
+/*************************************** iPhone 6 ***************************************/
+
+@media screen and (max-width: 375px) {}
+
+/*************************************** Galaxy S5 ***************************************/
+
+@media screen and (max-width: 360px) {}
+
+/*************************************** iPhone 4/iPhone 5 ***************************************/
+
+@media screen and (max-width: 320px) {
+  .ideas span, .star span, .clock span {
+    font-size: 20px!important;
+  }
+}

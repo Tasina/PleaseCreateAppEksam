@@ -1,0 +1,367 @@
+/*This CSS Contains*/
+
+/*--------------------Single Message - Body--------------------*/
+/*--------------------Single Message - Chat--------------------*/
+/*--------------------Single Message - Chat Title--------------------*/
+/*--------------------Single Message - Messages--------------------
+/*--------------------Single Message - Message Box--------------------*/
+/*--------------------Single Message - Custom Srollbar--------------------*/
+/*--------------------Single Message - Bounce--------------------*/
+
+
+
+/*****************************************************************************************************************************************************************************/
+
+
+
+/*--------------------Single Message--------------------*/
+
+/*--------------------Single Message - Body--------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.bg {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: scale(1.2);
+}
+body{
+  overflow-y: hidden;
+}
+
+/*--------------------Single Message - Chat--------------------*/
+.chat {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  background: rgba(255,255,255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+/*--------------------Single Message - Chat Title--------------------*/
+.chat-title {
+  flex: 0 1 55px;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+  padding: 12px 20px 10px 20px;
+}
+.chat-title h1, .chat-title h2 {
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 0 0 50px;
+  text-align: left;
+}
+.chat-title h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.chat-title .avatar {
+  position: absolute;
+  z-index: 100000;
+  top: 2px;
+  right: 9px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.chat-title .avatar img {
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+}
+.chat-title .avatar2 {
+  position: absolute;
+  z-index: 100000;
+  top: 2px;
+  left: 9px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.chat-title .avatar2 img {
+  width: 100%;
+  height: auto;
+}
+.chat-title i.icon-arrow-left{
+  font-size: 270%;
+  position: absolute;
+  z-index: 10000;
+  top: 4px;
+  left: 9px;
+}
+
+/*--------------------Single Message - Messages--------------------*/
+.messages {
+  flex: 1 1 auto;
+  color: rgba(255, 255, 255, 0.5);
+  overflow: scroll;
+  position: relative;
+  width: 100%;
+}
+.messages .messages-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 101%;
+  width: 100%;
+}
+.messages .message {
+  clear: both;
+  float: left;
+  padding: 6px 10px 7px;
+  border-radius: 10px 10px 10px 0;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 8px 0;
+  font-size: 11px;
+  line-height: 1.4;
+  margin-left: 35px;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.messages .message .timestamp {
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+  font-size: 9px;
+  color: dimgrey;
+}
+.messages .message::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  border-top: 6px solid rgba(0, 0, 0, 0.3);
+  left: 0;
+  border-right: 7px solid transparent;
+}
+.messages .message .avatar {
+  position: absolute;
+  z-index: 1;
+  bottom: -15px;
+  left: -35px;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+}
+.messages .message .avatar img {
+  width: 100%;
+  height: auto;
+}
+.messages .message.message-personal {
+  float: right;
+  margin-right: 4.5%;
+  max-width: 91%;
+  color: #fff;
+  text-align: right;
+  background: linear-gradient(145deg, #BAC8CC, #BAC8AA);
+  border-radius: 10px 0 10px 10px;
+}
+.messages .message.message-personal::before {
+  border-right: none;
+}
+.messages .message:last-child {
+  margin-bottom: 30px;
+}
+.messages .message.new {
+  transform: scale(0);
+  transform-origin: 0 0;
+  animation: bounce 500ms linear both;
+}
+.messages .message.loading::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  margin-top: 4px;
+  animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+  border: none;
+  animation-delay: .15s;
+}
+.messages .message.loading span {
+  display: block;
+  font-size: 0;
+  width: 20px;
+  height: 10px;
+  position: relative;
+}
+.messages .message.loading span::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  margin-top: 4px;
+  animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+  margin-left: -7px;
+}
+.messages .message.loading span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  margin-top: 4px;
+  animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
+  margin-left: 7px;
+  animation-delay: .3s;
+}
+
+/*--------------------Single Message - Message Box--------------------*/
+.message-box {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  position: relative;
+}
+.message-box .message-input {
+  background: rgba(255,255,255,0.2);
+  resize: none;
+  color: rgba(255, 255, 255, 1);
+  height: 100%;
+  width: 80%;
+  padding: 16px 0 16px 14px;
+
+}
+.message-input::-webkit-input-placeholder {
+  color: white;
+  line-height: 100%;
+  font-size: 110%;
+  text-transform: uppercase;
+  height: 100%;
+}
+.message-box .message-submit {
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  color: #fff;
+  border: none;
+  background: #BAC8AA;
+  font-size: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  transition: background .2s ease;
+}
+.message-submit:active {
+  transform: scale(0.95);
+}
+textarea:active{
+  position: relative;
+  top: 0;
+}
+
+/*--------------------Single Message - Custom Srollbar--------------------*/
+.scroll-bar {
+  display: none;
+}
+.mCSB_scrollTools {
+  margin: 1px -3px 1px 0;
+  opacity: 0;
+  display: none;
+}
+.mCSB_inside > .mCSB_container {
+  margin-right: 0px;
+  padding: 0 10px;
+  background-color: transparent;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: transparent !important;
+}
+
+/*--------------------Single Message - Bounce--------------------*/
+@keyframes bounce {
+  0% {
+    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  4.7% {
+    transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  9.41% {
+    transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  14.11% {
+    transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  18.72% {
+    transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  24.32% {
+    transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  29.93% {
+    transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  35.54% {
+    transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  41.04% {
+    transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  52.15% {
+    transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  63.26% {
+    transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  85.49% {
+    transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+@keyframes ball {
+  from {
+    transform: translateY(0) scaleY(0.8);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+

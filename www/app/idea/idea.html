@@ -1,0 +1,99 @@
+<ion-view>
+  <ion-content delegate-handle="scrollTop">
+    <ion-refresher id="refreshSpinner" on-refresh="RefreshIdea()" pulling-icon="icon ion-arrow-down-b" spinner="spiral">
+    </ion-refresher>
+    <div class="profileInfo">
+      <div class="row newHeader">
+        <div class="col-20">
+          <i id="back" class="icon-arrow-left" ng-click="goBack()"></i>
+        </div>
+        <div class="front col">
+          <h1 class="please"><span style="letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">COMMENTS</span><br><span style="font-weight: 500; letter-spacing: -2px;"></span></h1>
+        </div>
+        <div class="col-20">
+          <!--<i id="out" class="icon-chat-singel-plus" ng-click="showSignout()"></i>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="row userInfo">
+      <div id="idea_creator_image">
+        <div id="avatar_idea">
+          <img ng-src="{{userImgLink()}}">
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="idea_creator_Info">
+        <p id="idea_creator_username">{{username}}</p>
+        <p id="idea_created_date">{{createtfinished}} {{timefinished}}</p>
+      </div>
+    </div>
+    <div id="my_border"></div>
+    <div id="idea_body">
+      <h3><p class="whiteColor">{{ideaTitle}}</p></h3>
+      <div>
+        <p id="main-text" style="pointer-events: none;" ng-bind-html="mainText"></p>
+      </div>
+    </div>
+
+
+  <div class="countHeader">
+    <div class="comment_header2 row">
+      <div class="col-50" style="text-align: center!important;">
+        <i class="icon-chat-singel-no-color countIcon">&nbsp;<lable class="countText">{{getCommentCount}}</lable></i>
+      </div>
+      <div class="col-50" style="text-align: center!important; padding-right: 15%!important;">
+        <i class="icon-heart countIcon">&nbsp;<lable class="countText">{{getLikeCount}}</lable></i>
+      </div>
+    </div>
+  </div>
+
+
+    <div ng-if="!hasComments()" class="row" onload="noComments()">
+      <div class="col-25"></div>
+      <div class="col-50 no_comments">
+        <p>No comments !</p>
+        <p>Add the first comment</p>
+      </div>
+      <div class="col-25"></div>
+    </div>
+
+    <!--<div id="comment_body" class="row avatar-box" collection-repeat="c in ThisComments">
+      <div class="avatar_comment" id="comment_you" ng-if="commentYou(c)">
+
+      </div>
+    </div>-->
+
+        <ion-list id="notificationList">
+          <ion-item id="comment_body" class="row" ng-repeat="c in ThisComments">
+            <div ng-if="commentYou(c)" id="comment_you" class="avatar_comment">
+              <img class="avatar_comment_img" ng-src="{{c.userImgLink}}">
+            </div>
+            <div id="idea_comment">
+              <div id="comment_headerSide" class="comment_created_you">
+                <h4 id="Comment_headerSize"><strong>{{c.username}}</strong>&nbsp&nbsp{{c.createtfinished}} {{c.timefinished}}</h4>
+                <div id="comment_created_date2" ng-bind-html="c.cooked"></div>
+              </div>
+            </div>
+            <div ng-if="!commentYou(c)" id="comment_you2" class="avatar_comment2">
+              <img class="avatar_comment_img2" ng-src="{{c.userImgLink}}">
+            </div>
+          </ion-item>
+            <ion-infinite-scroll immediate-check="true" distance="1%" on-infinite="loadMoreData()" ng-if="!nodata"></ion-infinite-scroll>
+        </ion-list>
+
+
+  </ion-content>
+    <div class="row bb">
+      <div class="col-33 "></div>
+      <div class="col-33">
+        <i class="arrowTop ion-chevron-up" ng-click="scrollToTop()"></i>
+      <!--  <i ng-if="bottomArrow()" class="arrowTopBottom ion-chevron-down" ng-click="scrollToBottom()"></i> -->
+      </div>
+      <div class="col-33">
+        <i class="addComment ion-chatbubble-working" ng-click="addComment()"></i>
+      </div>
+    </div>
+
+</ion-view>

@@ -1,0 +1,10 @@
+{
+  "name": "PleaseCreate",
+  "app_id": "538fcba3",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://beta.pleasecreate.com/"
+    }
+  ]
+}

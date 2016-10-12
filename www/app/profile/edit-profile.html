@@ -1,0 +1,77 @@
+<ion-view>
+  <ion-content>
+
+    <div class="wrapper">
+      <div class="topProfileDiv row">
+        <div class="profileInfo">
+          <div class="row newHeader">
+            <div class="col-20">
+              <i id="back" class="icon-arrow-left" ng-click="historyBack()"></i>
+            </div>
+            <div class="front col ">
+              <h1 class="please"><span style="line-height: 14px; letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">EDIT</span><span style="font-weight: 500; letter-spacing: -2px;">PROFILE</span></h1>
+            </div>
+            <div class="col-20"></div>
+          </div>
+        </div>
+      </div>
+      <div id="edit-container-2" class="row">
+        <div id="profile-picture" class="">
+          <form id="form1" runat="server">
+            <input type='file' id="imgInp" hidden="false" />
+            <img id="blah" src="{{setAvatar()}}" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="edit-container-3" class="row">
+      <div class="col">
+        <div class="list specList" style="margin-bottom: 15%!important;">
+
+          <label class=" item item-input">
+            <span class="col-50 input-label edit_input">Username</span>
+            <button ng-click="changeUsername()" class="line2 col-50 edit_input btn-user-edit" style="color: dimgray;">{{loggedInUser.username}}</button>
+          </label>
+          <label class="item item-input">
+            <span class="col-50 input-label edit_input">Email</span>
+            <button ng-click="changeEmail()" class="col-50 edit_input btn-user-edit" style="color: dimgray;">{{loggedInUser.email}}</button>
+          </label>
+          <label class="item item-input">
+            <span class="col-50 input-label edit_input">Reset password</span>
+            <button ng-click="resetPassword()" class="line2 col-50 edit_input btn-user-edit" style="color: dimgray;">Send to email
+              <icon class="ion-email-unread"></icon>
+            </button>
+          </label>
+          <div class="editable-info">
+            <label class="item item-input">
+              <span class="col-50 input-label edit_input">Name</span>
+              <input class="left col-50 edit_input" ng-model="loggedInUser.name" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="col-50 input-label edit_input">Phone number</span>
+              <input class="line2 left col-50 edit_input" align="right" ng-model="loggedInUser.user_fields[4]" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="col-50 input-label edit_input">Location</span>
+              <input class="left col-50 edit_input" align="right" ng-model="loggedInUser.location" type="text">
+            </label>
+            <label class="item item-input">
+              <span class="col-50 input-label edit_input">Website</span>
+              <input class="left col-50 edit_input" style="width" align="right" ng-model="loggedInUser.website" type="text">
+            </label>
+          </div>
+          <div class="white">
+            <span class="textAreaHeadline col input-label">About you:</span>
+            <textarea class="about-textarea" rows="12" cols="50" ng-model="loggedInUser.bio_raw"></textarea>
+          </div>
+          <div id="edit-container-4" class="row">
+              <button ng-click="updateUser()" id="save-edit" class="button ">Save</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

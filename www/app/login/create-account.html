@@ -1,0 +1,123 @@
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+
+    <div class="profileInfo">
+      <div class="row newHeader">
+        <div class="col">
+          <i id="back" class="icon-arrow-left" ng-click="goBack()"></i>
+        </div>
+        <div class="col">
+          <h1 class="please"><span style="letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">JOIN</span><span style="font-weight: 500; letter-spacing: -2px;">US</span></h1>
+        </div>
+        <div class="col">
+          <!--<i id="out" class="icon-arrow-right" ng-click="goBack()"></i>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-33 col-offset-33">
+        <div class="profile">
+          <img src="img/icon.png">
+        </div>
+      </div>
+    </div>
+    <form name="signupForm" ng-submit="createUser(signupForm)" novalidate="">
+      <div class="row">
+        <div class="col col-80 col-offset-10">
+          <div class="list">
+
+            <!-- Name -->
+            <ion-input id="name_input" class="item item-input" ng-class="{ 'has-errors' : signupForm.name.$invalid && signupForm.$submitted,'no-errors' : signupForm.name.$valid && signupForm.$submitted}">
+              <span class="col-10 input-label ion-person loginLogo"></span>
+              <input type="name" name="name" placeholder="Name" ng-model="data.name" ng-minlength="2" ng-maxlength="20" required>
+              <div id="showName" class="show_this_information">
+                <div class="information_text">
+                  <a><strong>Name<br></strong></a>
+                  <a>- Must contain atleast 2 characters</a>
+                  <a>
+                    <br>
+                  </a>
+                </div>
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+              </div>
+              <span id="name_icon" class="input-label ion-alert-circled dialogIcon" ng-click="showInformation('showName')"></span>
+            </ion-input>
+
+            <!-- Username -->
+            <ion-input id="username_input" class="item item-input" ng-class="{ 'has-errors' : signupForm.username.$invalid && signupForm.$submitted,'no-errors' : signupForm.username.$valid && signupForm.$submitted}">
+              <span class="col-10 input-label ion-person loginLogo"></span>
+              <input type="username" name="username" placeholder="User Name" ng-model="data.username" ng-minlength="3" ng-maxlength="20" required>
+              <div id="showUsername" class="show_this_information">
+                <div class="information_text">
+                  <a><strong>Username<br></strong></a>
+                  <a>- Must contain atleast 3 characters</a>
+                </div>
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+              </div>
+              <span id="username_icon" class="input-label ion-alert-circled dialogIcon" ng-click="showInformation('showUsername')"></span>
+            </ion-input>
+
+            <!-- Password1 -->
+            <ion-input id="password_input" class="item item-input" ng-class="{ 'has-errors' : signupForm.password.$invalid && signupForm.$submitted,'no-errors' : signupForm.password.$valid && signupForm.$submitted}">
+              <span class="col-10 input-label ion-android-lock loginLogo"></span>
+              <input id="pass" type="password" name="password" placeholder="Password" ng-model="data.password" ng-minlength="8" ng-maxlength="20" required>
+              <div id="showPassword" class="show_this_information">
+                <div class="information_text">
+                  <a><strong>Password<br></strong></a>
+                  <a>- Must contain minimum 8 characters<br></a>
+                  <a>- Must contain maximum 20 characters</a>
+                </div>
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+              </div>
+              <span id="password_icon" class="input-label ion-alert-circled dialogIcon" ng-click="showInformation('showPassword')"></span>
+            </ion-input>
+
+            <!-- Password2 -->
+            <ion-input id="password1_input" class="item item-input" ng-class="{ 'has-errors' : signupForm.confirmPassword.$invalid && signupForm.$submitted,'no-errors' : signupForm.confirmPassword.$valid && signupForm.$submitted}">
+              <span class="col-10 input-label ion-android-lock loginLogo"></span>
+              <input id="pass1" type="password" name="confirmPassword" placeholder="Confirm Password" ng-model="data.confirmPassword" ng-minlength="8" ng-maxlength="20" required>
+              <div id="showPassword1" class="show_this_information">
+                <div class="information_text">
+                  <a><strong>Password 2<br></strong></a>
+                  <a>- Must contain minimum 8 characters<br></a>
+                  <a>- Must contain maximum 20 characters<br></a>
+                  <a>- Must be equals password1</a>
+                </div>
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+              </div>
+                <span id="#password1_icon" ng-class="isValid ? 'has-errors' : 'no-errors'" class="input-label ion-alert-circled dialogIcon"></span>
+            </ion-input>
+
+            <!-- Email -->
+            <ion-input id="email_input" class="item item-input" ng-class="{ 'has-errors' : signupForm.email.$invalid && signupForm.$submitted,'no-errors' : signupForm.email.$valid && signupForm.$submitted}">
+              <span class="col-10 input-label ion-email loginLogo"></span>
+              <input id="email_input1" type="email" name="email" placeholder="Email" ng-model="data.email" ng-minlength="6" required>
+              <div id="showEmail" class="show_this_information">
+                <div class="information_text">
+                  <a><strong>Email<br></strong></a>
+                  <a>- Must contain @<br></a>
+                  <a>- Must end with etc. .com</a>
+                </div>
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+              </div>
+              <span id="email_icon" class="input-label ion-alert-circled dialogIcon" ng-click="showInformation('showEmail')"></span>
+            </ion-input>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="btnWrapper">
+            <button class="button btnGenerel btnCreate" type="submit">CREATE ACCOUNT</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col col-60 col-offset-20">
+        <p id="terms">By pressing Create Account, I accept the terms of services.</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

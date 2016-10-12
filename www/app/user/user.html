@@ -1,0 +1,74 @@
+<ion-content>
+  <ion-view>
+
+    <div class="wrapper">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div id="otherImage" class="col col-30 col-offset-5"><img src="../../img/profile-image.png"></div>
+          <div class="col col-60">
+            <div class="row">
+              <div id="otherName" class="col">Kenneth Cole</div>
+            </div>
+            <div class="row">
+              <div id="otherWork" class="col">Bridge Engineer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row historyDiv">
+        <div class="col col-33 likesNr nr">
+          <h1>{{loggedInUser.post_count}}</h1>
+          <label>Comments</label>
+        </div>
+        <div class="col col-33 ideasNr nr">
+          <h1>2</h1>
+          <label>Ideas</label>
+        </div>
+        <div class="col col-33 commentsNr nr">
+          <h1>9</h1>
+          <label>Likes</label>
+        </div>
+      </div>
+
+
+    <div id="profileBottom">
+      <div class="options row">
+        <div class="col col-50">
+          <button ng-click="showRecieved()" class="btnGenerel btnProfile greenFontColor">Recieved</button>
+        </div>
+        <div class="col col-50">
+          <button ng-click="showGiven()" class="btnGenerel btnProfile greenFontColor">Given</button>
+        </div>
+      </div>
+      <div id="notificationsRead" class="Sitem" ng-repeat="n in notifications" ng-click="goToIdea(n.topic_id)">
+        <i class="icon-box icon-heart-color col col-10"></i>
+        <div id="label-box" class="row itemText fatText">
+          <label id="label-txt">
+            {{n.data.original_username}}<strong> commented your idea </strong>({{n.data.topic_title}})
+          </label>
+        </div>
+        <div class="row itemInfo">
+          <div class="iconCol col col-10">
+            <i class="ion-clock"><lable id="days"> {{n.created_at}} Days ago</lable></i>
+          </div>
+          <div class="infoCol col col-40"></div>
+          <div class="iconCol col col-10">
+            <i class="ion-ios-chatbubble-outline"><lable id="days"> {{n.topicsdata.posts_count}}</lable></i>
+          </div>
+          <div class="infoCol col col-10"></div>
+          <div class="iconCol col col-10">
+            <i class="ion-ios-heart-outline"><lable id="days"> {{n.topicsdata.like_count}}</lable></i>
+          </div>
+          <div class="infoCol col col-10"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <pop-menu></pop-menu>
+
+</ion-content>
+</ion-view>

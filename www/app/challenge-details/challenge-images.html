@@ -1,0 +1,24 @@
+<ion-view view-title="Intro" name="tab-intro">
+  <ion-content class="details-content" >
+    <div class="wrapper2 color-changes">
+      <challenge-top></challenge-top>
+      <div class="images-div positionate">
+        <h5>Image Gallery</h5>
+        <div class="image-wrapper">
+          <div class="image-order" ng-repeat="image in cImages">
+            <div class="image col-50" ng-click="showImage(image.img)">
+              <div ng-bind-html="image.img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script id="image-modal.html" type="text/ng-template">
+      <div class="modal image-modal transparent" ng-click="closeModal()">
+        <ion-pane class="transparent">
+          <p ng-bind-html="imageSrc"></p>
+        </ion-pane>
+      </div>
+    </script>
+  </ion-content>
+</ion-view>

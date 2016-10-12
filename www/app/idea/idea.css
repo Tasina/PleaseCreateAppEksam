@@ -1,0 +1,688 @@
+/*This CSS contains*/
+
+
+/*--------------------User Profile Image-----------------------------------*/
+
+
+/*--------------------User Profile Name------------------------------------*/
+
+
+/*--------------------User Profile Occupation------------------------------*/
+
+
+/*--------------------User Recieved/Given----------------------------------*/
+
+
+/*--------------------Media Query------------------------------------------*/
+
+.arrowTop {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  display: block;
+}
+
+.addComment{
+  color: white;
+  text-align: right;
+  margin-right: 10%;
+  font-size: 2.5em;
+  display: block;
+}
+
+.bb{
+  height: 5em;
+  padding-top: 2em;
+  position: absolute;
+  z-index: 10000;
+  bottom: 0px !important;
+  background: -webkit-linear-gradient(-180deg, rgba(0,0,0,0), #b4c49f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-180deg, rgba(0,0,0,0), #b4c49f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-180deg, rgba(0,0,0,0), #b4c49f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-180deg, rgba(0,0,0,0), #b4c49f); /* Standard*/
+}
+
+/*---------------- New Idea css -------------- */
+
+.ai-div {
+  margin: 5% 10%;
+  height: auto;
+}
+.ai-div h4 {
+  color: white;
+}
+.ai-title {
+  background: none;
+  border-bottom: 1px solid white !important;
+  margin-bottom: 10%;
+  width: 100%;
+  overflow: auto;
+}
+
+.ai-textarea{
+  padding:3%;
+  resize: none;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 5%;
+  width: 100%;
+  min-height: 15em;
+}
+
+/*--------------- COMMENT -------------------*/
+
+#comment-textarea {
+  height: 20em;
+  border-radius: 1em;
+  padding: 5%;
+  overflow: scroll;
+  resize: none;
+}
+
+/*****************************************************************************************************************************************************************************/
+
+
+/*Top menu (back, headline and add connemt)*/
+
+i.ion-plus-circled, i.icon-chat-singel-plus {
+  font-size: 300%!important;
+  color: white;
+}
+
+/*Avatar image*/
+
+.userInfo {
+  text-align: center;
+}
+#idea_creator {
+  text-align: center;
+}
+#idea_creator_image {
+  width: 100%;
+}
+#avatar_idea img {
+  width: 20%!important;
+  height: 20%!important;
+  border-radius: 50%;
+}
+
+/*Idea creator information*/
+
+#idea_creator_Info {
+  padding: 5% 0 2% 0;
+  text-align: center;
+  width: 100%;
+}
+#idea_creator_username {
+  font-size: 200%;
+  color: white;
+  /*text-transform: uppercase;*/
+}
+#idea_created_date {
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+/*Border*/
+
+#my_border {
+  margin-left: 15%;
+  margin-right: 15%;
+  border-bottom: 3px solid white;
+}
+
+/*Idea headline and text*/
+
+#idea_body {
+  padding: 2% 5% 5% 5%;
+  color: white;
+}
+#idea_body h3 {
+  font-size: 20px;
+}
+.whiteColor {
+  color: white !important;
+}
+#main-text {
+  color: white;
+  text-align: center !important;
+}
+#main-text h2 {
+  text-align: center !important;
+  font-size: 1.5em;
+}
+#main-text img {
+  height: 25% !important;
+  width: 25% !important;
+}
+#main-text span {
+  display: none;
+}
+#main-text .emoji {
+  width: 1em !important;
+}
+
+/*Comment line*/
+.countHeader {
+  width: 100%;
+  height: 28px;
+  background-color: rgba(0,0,0,0.1);
+}
+.comment_header2 {
+  padding: 3px 0 0 7%!important;
+
+}
+.countIcon {
+  color: white!important;
+  opacity: 1!important;
+}
+i.icon-chat-singel-no-color, i.icon-heart {
+  font-size: 150%!important;
+}
+.countText {
+  font-family: Arial;
+}
+.lightbox-wrapper {
+  pointer-events: none;
+}
+
+/*No comments message*/
+
+.no_comments {
+  text-align: center;
+  margin-top: 3%;
+  background-color: white;
+  color: gray;
+  height: 10%;
+  width: 100%;
+  border-radius: 10px;
+}
+.no_comments p {
+  color: gray !important;
+  font-weight: bold;
+}
+
+/*Comment tiles*/
+.bullerbasse {
+
+}
+#comment_body {
+  width: 100%!important;
+  height: auto!important;
+  border: none!important;
+  box-sizing: border-box;
+  padding: 5% 8% 5% 8%;
+}
+.avatar_comment {
+  margin: -20px -15px 0 0;
+  position: relative;
+  z-index: 10000;
+}
+.avatar_comment_img {
+  box-shadow: 2px 2px 5px rgba(127, 127, 127, 0.5);
+  width: 35px;
+  border-radius: 50%;
+}
+.avatar_comment2 {
+  margin: -20px 0 0 -15px;
+  position: relative;
+  z-index: 10000;
+}
+.avatar_comment_img2 {
+  box-shadow: 2px 2px 5px rgba(127, 127, 127, 0.5);
+  width: 35px;
+  border-radius: 50%;
+}
+#idea_comment {
+  max-width: 95%;
+  box-shadow: 2px 2px 10px rgba(127, 127, 127, 0.5);
+  width: 100%!important;
+  position: relative;
+  z-index: 9999;
+  border-radius: 5px;
+  padding: 3% 5% 3% 5%;
+  background-color: white;
+}
+.comment_created_you h4 {
+  color: dimgray;
+  font-weight: bold;
+}
+#Comment_headerSize {
+  font-size: 70% !important;
+  text-transform: uppercase;
+}
+#comment_created_date2 p {
+  font-size: 90%;
+  color: gray !important;
+}
+#comment_created_date2 li {
+  font-size: 90%;
+  color: gray !important;
+}
+#comment_created_date2 img {
+  width: 100%;
+  height: 100%;
+}
+#comment_created_date2 span {
+  display: none;
+}
+
+/*--------------------Media Query--------------------*/
+
+
+/*************************************** Galaxy S7 (Landscape) ***************************************/
+
+@media screen and (max-width: 2560px) {}
+
+/*************************************** Galaxy S7 ***************************************/
+
+@media screen and (max-width: 1440px) {}
+
+/*************************************** iPad/iPad Mini (Landscape) ***************************************/
+
+@media screen and (max-width: 1024px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 25px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 215px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 215px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 28px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPad/iPad Mini ***************************************/
+
+@media screen and (max-width: 768px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 25px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 150px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 28px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPhone 6Plus (Landscape) ***************************************/
+
+@media screen and (max-width: 736px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 17px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 150px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 28px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** Nexus 5X (Landscape) ***************************************/
+
+@media screen and (max-width: 732px) {}
+
+/*************************************** iPhone 6 (Landscape) ***************************************/
+
+@media screen and (max-width: 667px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 10px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 145px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 145px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** Galaxy S5 (Landscape) ***************************************/
+
+@media screen and (max-width: 640px) {
+  /*Comment tiles*/
+  #comment_body {
+    height: auto!important;
+    border: none!important;
+    box-sizing: border-box;
+    padding: 7% 8% 7% 8%;
+  }
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 10px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 135px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 135px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPhone 5 (Landscape) ***************************************/
+
+@media screen and (max-width: 568px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 10px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 70px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPhone 4 (Landscape) ***************************************/
+
+@media screen and (max-width: 480px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 6px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 60px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPhone 6 Plus ***************************************/
+
+@media screen and (max-width: 414px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 15px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 70px;
+  }
+  .front {
+    position: relative;
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+    position: relative;
+    z-index: 100000!important;
+  }
+}
+
+/*************************************** Nexus X5/Nexus 6P ***************************************/
+
+@media screen and (max-width: 412px) {}
+
+/*************************************** iPhone 6 ***************************************/
+
+@media screen and (max-width: 375px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 8px!important;
+    position: relative;
+    z-index: 9999;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** Galaxy S5 ***************************************/
+
+@media screen and (max-width: 360px) {
+  /*Comment tiles*/
+  #comment_body {
+    height: auto!important;
+    border: none!important;
+    box-sizing: border-box;
+    padding: 6% 8% 6% 8%;
+  }
+}
+
+/*************************************** iPhone 4/iPhone 5 ***************************************/
+
+@media screen and (max-width: 320px) {
+  /*Comment tiles*/
+  #comment_body {
+    height: auto!important;
+    border: none!important;
+    box-sizing: border-box;
+    padding: 7% 8% 7% 8%;
+  }
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 0px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}

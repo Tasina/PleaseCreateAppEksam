@@ -1,0 +1,1711 @@
+/*This CSS Contains*/
+
+/*--------------------Edit Profile - Headline Container--------------------*/
+/*--------------------Edit Profile - Profile Image Container--------------------*/
+/*--------------------Edit Profile - Input Container--------------------*/
+/*--------------------Edit Profile - Save Button Container--------------------*/
+/*--------------------Profile - Logout Button--------------------*/
+/*--------------------Profile - Logout Popup--------------------*/
+/*--------------------Profile - Top Div--------------------*/
+/*--------------------Profile - Background Image--------------------*/
+/*--------------------Profile - Top Info (Buttons, Please Create, Name, Location)--------------------*/
+/*--------------------Profile - Comments, Ideas, Likes--------------------*/
+/*--------------------Profile - Notification Div--------------------*/
+/*--------------------Profile - Recieved/Given--------------------*/
+/*--------------------Profile - Notification Bars--------------------*/
+
+
+/*****************************************************************************************************************************************************************************/
+
+body {
+  background: transparent!important;
+}
+
+#notificationList .list{
+  margin-top: 0;
+  height: 100%;
+}
+
+/*--------------------Edit Profile - Headline Container--------------------*/
+#edit-container-1{
+  height: auto;
+  padding-top: 5%;
+}
+#edit-container-1 > #head-line1{
+  padding-left: 5%;
+}
+#all-around-header{
+  font-size: 100%;
+}
+
+/*--------------------Edit Profile - Profile Image Container--------------------*/
+#edit-container-2{
+  height: 22%;
+}
+#profile-picture {
+  padding-top: 5%;
+}
+#profile-picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+#change-photo {
+  font-size: 100%;
+  text-align: center;
+ }
+
+/*--------------------Edit Profile - Input Container--------------------*/
+
+.edit_input {
+  text-align: left!important;
+  margin: 0!important;
+  font-size: 250%;
+}
+
+.left {
+  padding-left: 6px!important;
+}
+
+.edit_input{
+  width: 43%;
+}
+#edit-container-3{
+  height: 100%!important;
+  margin: 0;
+  padding: 0;
+}
+.specList {
+  margin: 0 5%!important;
+}
+.specList .item {
+  padding-left: 0;
+}
+/*Warning Edit*/
+.btn-user-edit {
+  background: transparent;
+  color: dimgrey;
+}
+/*Edit*/
+.specList input {
+  margin: 0 5%;
+  background: transparent;
+  color: dimgrey;
+}
+.editable-info input {
+  color: dimgray;
+}
+.about-textarea {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+  color: dimgrey;
+  width: 100%;
+  height: auto;
+  resize: none;
+}
+.popup-sub-title {
+  color: red;
+}
+
+/*--------------------Edit Profile - Save Button Container--------------------*/
+#edit-container-4{
+  width: 88%;
+  margin: 10% 0 0 0;
+  padding: 0;
+}
+
+.bb {
+  margin: 0;
+  padding: 0;
+}
+
+#save-edit {
+  width: 100%;
+  margin: 0;
+  padding: 0!important;
+  border-radius: 40px;
+}
+
+/*--------------------Profile - Logout Button--------------------*/
+.profileInfo {
+  margin-top: 25px!important;
+}
+#out {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 150px;
+}
+#back {
+  -webkit-box-shadow: none;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 150px;
+}
+.front {
+  z-index: 1000;
+  margin: 0!important;
+  padding-top: 25px!important;
+}
+.please {
+  margin-top: 8px!important;
+}
+h1.please {
+  font-size: 20px!important;
+}
+i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+  font-size: 40px!important;
+  color: white;
+}
+
+/*--------------------Profile - Logout Popup--------------------*/
+
+/*Overlay background*/
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Popup box*/
+.popup-container.active .popup {
+  background-color: transparent;
+  text-align: center;
+}
+.popup-container.active .popup:before {
+  background-color: transparent;
+}
+.popup-container.active .popup:after {
+  background-color: transparent;
+}
+
+/*Popup background after click*/
+.popup-open .popup-backdrop, .popup-open .popup {
+  background-color: transparent;
+}
+
+/*Buttons background*/
+.popup-import button {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*Icon buttons*/
+.popup-buttons .button.ion-checkmark-circled {
+  color: rgba(119, 190, 119, 1);
+  border: none;
+  background-color: transparent;
+}
+.popup-buttons .button.ion-close-circled {
+  color: rgba(255, 105, 97, 1);
+  border: none;
+  background-color: transparent;
+}
+.button:before {
+  font-size: 500%;
+}
+.create_popup .popup {
+  width: 70%;
+  height: 23%;
+}
+.create_popup .popup-title {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.create_popup .popup-body {
+  text-align: center;
+}
+.create_popup .popup-body {
+  text-align: center;
+}
+span {
+  color: white;
+}
+.create_popup .popup-buttons .button {
+  background-color: #BAC8AA;
+}
+
+/*--------------------Profile - Top Div--------------------*/
+.wrapper2 {
+  background-color: white;
+}
+.topProfileDiv2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b4c49f;
+}
+.topProfileDiv {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*--------------------Profile - Background Image--------------------*/
+.topProfileDiv2 img {
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+}
+.topProfileDiv img {
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+}
+
+/*--------------------Profile - Top Info (Buttons, Please Create, Name, Location)--------------------*/
+.profileInfo {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.nameHeader {
+  text-align: center;
+  padding-top: 0%
+}
+.nameHeader h1 {
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+.newHeader {
+  height:85px!important;
+
+}
+.white {
+  position: relative;
+  color: white;
+}
+.professionHeader {
+  font-weight: lighter;
+}
+
+/*--------------------Profile - Comments, Ideas, Likes--------------------*/
+.historyDiv {
+  margin: 5% 0;
+}
+.nr {
+  position: relative;
+  text-align: center;
+  height: 5%;
+  color:white;
+}
+.ideasNr {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+/*--------------------Profile - Notification Div--------------------*/
+#profileBottom {
+  margin: 0;
+  overflow: scroll;
+  width: 100%;
+  height: 100%!important;
+  background-color: white;
+}
+
+/*--------------------Profile - Recieved/Given--------------------*/
+.options {
+  align-items: center;
+  width: 100%;
+  color: #BAC8AA;
+  text-align: center;
+  height: 15%;
+  border-bottom: 1px solid #BAC8AA;
+}
+.btnProfile {
+  padding: 5%;
+  width: 60%;
+  background: none;
+  border: 1px solid #BAC8AA;
+}
+
+/*--------------------Profile - Notification Bars--------------------*/
+
+/*Main Nitification Bar*/
+.sitem {
+  width:auto!important;
+  height: 61px;
+  max-height: 61px;
+  border-bottom: 1px solid #BAC8AA;
+  padding: 0;
+  margin: 0;
+}
+
+.sitemRead {
+  background-color: #F8F8FF;
+  width:auto!important;
+  height: 61px;
+  max-height: 61px;
+  border-bottom: 1px solid #BAC8AA;
+  padding: 0;
+  margin: 0;
+}
+
+/*Color Icons*/
+i.heart2, i.bulb2, i.chat2 {
+  font-size: 300%!important;
+  padding-left: 16%;
+}
+i.icon-heart-color {
+  color: #fa6c8d;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1001;
+}
+i.icon-bulb-light-color {
+  color: #f2be6b;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1002;
+}
+i.icon-chat-singel-color {
+  color: #bac8aa;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1003;
+}
+.icon-box {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+}
+
+/*Notifications text*/
+.itemText label {
+  font-size: 3.5vw;
+  font-weight: 900;
+  font-family: Arial;
+  width: 100%;
+  color: dimgrey;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.label-text {
+  box-sizing: border-box;
+}
+.itemText, .itemInfo {
+  width: 80%;
+  float: right;
+  padding: 0;
+}
+.itemText {
+  margin: 1% 0 1% 0;
+}
+.itemInfo {
+  margin: 0 0 4% 0;
+}
+
+/*Icons, Days, Comments And Likes*/
+.ion-clock, .ion-ios-chatbubble-outline, .ion-ios-heart-outline {
+  font-size: 3vw;
+  font-weight: 200;
+  color: lightgray;
+  position: absolute;
+  z-index: 10000;
+}
+.days {
+  font-family: Arial;
+}
+
+/*--------------------Media Query--------------------*/
+
+/*************************************** Galaxy S7 (Landscape) ***************************************/
+@media screen and (max-width: 2560px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+
+  .front h1 {
+    padding: 0 0 0 0!important;
+  }
+  #edit-container-2 {
+    width: 100%!important;
+    margin-bottom: 0!important;
+  }
+  #profile-picture {
+    margin: 0 auto;
+    width: 400px!important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto!important;
+    width: 60%!important;
+  }
+  .textAreaHeadline {
+    padding: 4% 0!important;
+  }
+  .about-textarea {
+    font-size: 300%;
+    padding: 2%;
+    line-height: normal;
+  }
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 300%!important;
+    margin-left: 0!important;
+    text-align: left;
+    height: auto!important;
+    padding: 1% 0;
+  }
+  .left {
+    padding-left: 0!important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+  #save-edit {
+    width:40%;
+    margin: 0 auto;
+    font-size: 300%;
+    padding: 2% 0!important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 350%;
+  }
+
+  /*Profile - Top information icons */
+
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 100%;
+  }
+  .nr label {
+    font-size: 300%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 170px;
+    max-height: 180px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 0.5%;
+  }
+  .itemText label {
+    font-size: 250%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 250%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 1% 0 0 3%;
+  }
+  i.icon-heart-color, i.icon-chat-singel-color, i.icon-bulb-light-color {
+    font-size: 750%!important;
+  }
+}
+
+/*************************************** Galaxy S7 ***************************************/
+@media screen and (max-width: 1440px) {
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto!important;
+    width: 80%!important;
+  }
+  .about-textarea {
+    font-size: 300%;
+    padding: 2%;
+    line-height: normal;
+  }
+  .left {
+    padding-left: 0!important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 250%;
+  }
+
+  /*Profile - Top information icons */
+
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 100%;
+  }
+  .nr label {
+    font-size: 300%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 150px;
+    max-height: 150px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 0.5%;
+  }
+  .itemText label {
+    font-size: 250%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 250%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 1% 0 0 3%;
+  }
+  i.icon-heart-color, i.icon-chat-singel-color, i.icon-bulb-light-color {
+    font-size: 750%!important;
+  }
+}
+
+/*************************************** iPad/iPad Mini (Landscape) ***************************************/
+@media screen and (max-width: 1024px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+
+  #edit-container-2 {
+    width: 100%!important;
+    margin-bottom: 0!important;
+  }
+  #profile-picture {
+    margin: 0 auto;
+    width: 200px!important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto!important;
+    width: 60%!important;
+  }
+  .textAreaHeadline {
+    padding: 4% 0!important;
+  }
+  .about-textarea {
+    font-size: 120%;
+    padding: 2%;
+    line-height: normal;
+  }
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 120%!important;
+    margin-left: 0!important;
+    text-align: left;
+    height: auto!important;
+    padding: 1% 0;
+  }
+  .left {
+    padding-left: 0!important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+  #save-edit {
+    width:60%;
+    margin: 0 auto;
+    font-size: 120%;
+    padding: 0 0!important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 150%;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 25px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 215px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 215px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+  .nr label {
+    font-size: 200%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 100px;
+    max-height: 100px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 1.8%;
+  }
+  .itemText label {
+    font-size: 100%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 100%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 1.3% 0 0 3%;
+  }
+  i.heart2, i.chat2, i.bulb2 {
+    font-size: 450%!important;
+  }
+}
+
+/*************************************** iPad/iPad Mini ***************************************/
+@media screen and (max-width: 768px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+
+  #edit-container-2 {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+
+  #profile-picture {
+    margin: 0 auto;
+    width: 200px !important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+
+  .textAreaHeadline {
+    padding: 4% 0 !important;
+  }
+
+  .about-textarea {
+    font-size: 120%;
+    padding: 2%;
+    line-height: normal;
+  }
+
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 120% !important;
+    margin-left: 0 !important;
+    text-align: left;
+    height: auto !important;
+    padding: 1% 0;
+  }
+
+  .left {
+    padding-left: 0 !important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+
+  #save-edit {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 120%;
+    padding: 0 0 !important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+  .front span {
+    font-size: 20px!important;
+  }
+
+  .profileInfo h4 {
+    font-size: 150%;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 25px !important;
+  }
+
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+  }
+
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 150px;
+  }
+
+  .front {
+    z-index: 1000;
+    margin: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .please {
+    margin-top: 8px !important;
+  }
+
+  h1.please {
+    font-size: 20px!important;
+  }
+
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px !important;
+    color: white;
+  }
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+
+  .nr label {
+    font-size: 200%;
+  }
+
+  /*Notification bar*/
+  .list {
+    width: 100%;
+  }
+
+  .sitem, .sitemRead {
+    height: 100px;
+    max-height: 100px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 2.5%;
+  }
+
+  .itemText label {
+    font-size: 100%;
+    padding-left: 0;
+  }
+
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 100%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 1.8% 0 0 2%;
+  }
+
+  i.heart2, i.chat2, i.bulb2 {
+    font-size: 450% !important;
+  }
+}
+
+/*************************************** iPhone 6Plus (Landscape) ***************************************/
+@media screen and (max-width: 736px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+  #edit-container-2 {
+    width: 100%!important;
+    margin-bottom: 0!important;
+  }
+  #profile-picture {
+    margin: 0 auto;
+    width: 150px!important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto!important;
+    width: 60%!important;
+  }
+  .textAreaHeadline {
+    padding: 4% 0!important;
+  }
+  .about-textarea {
+    font-size: 80%;
+    padding: 2%;
+    line-height: normal;
+  }
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 80%!important;
+    margin-left: 0!important;
+    text-align: left;
+    height: auto!important;
+    padding: 1% 0;
+  }
+  .left {
+    padding-left: 0!important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+  #save-edit {
+    width:60%;
+    margin: 0 auto;
+    font-size: 100%;
+    padding: 0 0!important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 17px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 150px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 150px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+  .nr label {
+    font-size: 120%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 70px;
+    max-height: 70px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 0.5%;
+  }
+  .itemText label {
+    font-size: 100%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 100%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 0.8% 0 0 3%;
+  }
+  i.heart2, i.chat2, i.bulb2 {
+    font-size: 350%!important;
+  }
+}
+
+/*************************************** Nexus 5X (Landscape) ***************************************/
+@media screen and (max-width: 732px) {
+
+}
+
+/*************************************** iPhone 6 (Landscape) ***************************************/
+@media screen and (max-width: 667px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 10px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 145px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 145px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** Galaxy S5 (Landscape) ***************************************/
+@media screen and (max-width: 640px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 10px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 135px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 135px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPhone 5 (Landscape) ***************************************/
+@media screen and (max-width: 568px) {
+  /*Profile - Top information*/
+  .profileInfo {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+  .front {
+    padding: 0% 0 0 0!important;
+  }
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 130%;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 10px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 70px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+  .nr label {
+    font-size: 120%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 50px;
+    max-height: 50px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 0.5%;
+  }
+  .itemText label {
+    font-size: 75%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 75%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 1.3% 0 0 4%;
+  }
+  i.icon-heart-color, i.icon-chat-singel-color, i.icon-bulb-light-color {
+    font-size: 200%!important;
+  }
+}
+
+/*************************************** iPhone 4 (Landscape) ***************************************/
+@media screen and (max-width: 480px) {
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 6px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 60px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+}
+
+/*************************************** iPhone 6 Plus ***************************************/
+@media screen and (max-width: 414px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+  #back {
+    padding: 5% 0 0 0;
+  }
+  .front h1 {
+    padding: 0 0 0 0!important;
+  }
+  #edit-container-2 {
+    width: 100%!important;
+    margin-bottom: 0!important;
+  }
+  #profile-picture {
+    margin: 0 auto;
+    width: 150px!important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto!important;
+    width: 80%!important;
+  }
+  .textAreaHeadline {
+    padding: 4% 0!important;
+  }
+  .about-textarea {
+    font-size: 80%;
+    padding: 2%;
+    line-height: normal;
+  }
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 80%!important;
+    margin-left: 0!important;
+    text-align: left;
+    height: auto!important;
+    padding: 1% 0;
+  }
+  .left {
+    padding-left: 0!important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+  #save-edit {
+    width:60%;
+    margin: 0 auto;
+    font-size: 100%;
+    padding: 0 0!important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 130%;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 15px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 70px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+  .nr label {
+    font-size: 120%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 70px;
+    max-height: 70px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 3%;
+  }
+  .itemText label {
+    font-size: 75%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 75%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 2.5% 0 0 1%;
+  }
+  i.icon-heart-color, i.icon-chat-singel-color, i.icon-bulb-light-color {
+    font-size: 300%!important;
+  }
+}
+
+/*************************************** Nexus X5/Nexus 6P ***************************************/
+@media screen and (max-width: 412px) {
+
+}
+
+/*************************************** iPhone 6 ***************************************/
+@media screen and (max-width: 375px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+  #back {
+    padding: 7% 0 0 0;
+  }
+  .front h1 {
+    padding: 0 0 0 0!important;
+  }
+  #edit-container-2 {
+    width: 100%!important;
+    margin-bottom: 0!important;
+  }
+  #profile-picture {
+    margin: 0 auto;
+    width: 150px!important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto!important;
+    width: 80%!important;
+  }
+  .textAreaHeadline {
+    padding: 4% 0!important;
+  }
+  .about-textarea {
+    font-size: 80%;
+    padding: 2%;
+    line-height: normal;
+  }
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 80%!important;
+    margin-left: 0!important;
+    text-align: left;
+    height: auto!important;
+    padding: 1% 0;
+  }
+  .left {
+    padding-left: 0!important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+  #save-edit {
+    width:60%;
+    margin: 0 auto;
+    font-size: 100%;
+    padding: 0 0!important;
+  }
+
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+  .front {
+    padding: 0 0 0 0!important;
+  }
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 130%;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 8px!important;
+  }
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+  }
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+  }
+  .front {
+    z-index: 1000;
+    margin: 0!important;
+    padding-top: 0!important;
+  }
+  .please {
+    margin-top: 8px!important;
+  }
+  h1.please {
+    font-size: 20px!important;
+  }
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting {
+    font-size: 40px!important;
+    color: white;
+  }
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+  .nr label {
+    font-size: 120%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 70px;
+    max-height: 70px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 3%;
+  }
+  .itemText label {
+    font-size: 75%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 75%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 2.5% 0 0 1%;
+  }
+  i.icon-heart-color, i.icon-chat-singel-color, i.icon-bulb-light-color {
+    font-size: 300%!important;
+  }
+}
+
+/*************************************** Galaxy S5 ***************************************/
+@media screen and (max-width: 360px) {
+  /*Profile - Top information*/
+  .profileInfo {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*Profile - Top information headline*/
+  .front {
+    padding: 0 0 0 0!important;
+  }
+  .front span {
+    font-size: 20px!important;
+  }
+  .profileInfo h4 {
+    font-size: 130%;
+  }
+
+  /*Profile - Top information icons */
+
+
+  /*Profile - Comments, Ideas and Likes number*/
+  .nr {
+    font-size: 80%;
+  }
+  .nr label {
+    font-size: 120%;
+  }
+
+  /*Notification bar*/
+  .list{
+    width: 100%;
+  }
+  .sitem, .sitemRead {
+    height: 50px;
+    max-height: 50px;
+  }
+
+  /*Profile - Notification bar headline*/
+  .itemText {
+    padding: 0;
+    margin-top: 1.5%;
+  }
+  .itemText label {
+    font-size: 60%;
+    padding-left: 0;
+  }
+  i.ion-clock, i.ion-ios-chatbubble-outline, i.ion-ios-heart-outline {
+    font-size: 75%;
+  }
+
+  /*Profile - Notification bar icon*/
+  .icon-box {
+    padding: 2.5% 0 0 2%;
+  }
+  i.icon-heart-color, i.icon-chat-singel-color, i.icon-bulb-light-color {
+    font-size: 200%!important;
+  }
+  .itemText {
+    font-size: 80%;
+  }
+}
+
+/*************************************** iPhone 4/iPhone 5 ***************************************/
+@media screen and (max-width: 320px) {
+  /*Edit Profile - Top information*/
+  .wrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+
+  #back {
+    padding: 8% 0 0 0;
+  }
+
+  .front h1 {
+    padding: 0 0 0 0 !important;
+  }
+
+  #edit-container-2 {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+
+  #profile-picture {
+    margin: 0 auto;
+    width: 150px !important;
+  }
+
+  /*Edit Profile - Edit information*/
+  .specList {
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+
+  .textAreaHeadline {
+    padding: 4% 0 !important;
+  }
+
+  .about-textarea {
+    font-size: 60%;
+    padding: 2%;
+    line-height: normal;
+  }
+
+  .input-label, .line2, .btn-user-edit, .left {
+    color: white;
+    font-size: 60% !important;
+    margin-left: 0 !important;
+    text-align: left;
+    height: auto !important;
+    padding: 1% 0;
+  }
+
+  .left {
+    padding-left: 0 !important;
+  }
+
+  /*Edit Profile - Save button*/
+  #edit-container-4 {
+    width: 100%;
+  }
+
+  #save-edit {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 100%;
+    padding: 0 0 !important;
+  }
+
+  /*Profile - Top information icons */
+  .profileInfo {
+    margin-top: 0px !important;
+  }
+
+  #out {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+  }
+
+  #back {
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+  }
+
+  .front {
+    z-index: 1000;
+    margin: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .please {
+    margin-top: 8px !important;
+  }
+
+  h1.please {
+    font-size: 20px!important;
+  }
+
+  i.icon-sign-out, i.icon-arrow-left, i.icon-setting, i.icon-arrow-right {
+    font-size: 40px !important;
+    color: white;
+  }
+
+  .itemText {
+    font-size: 80%;
+  }
+
+  .sitem, .sitemRead {
+    height: 47px;
+    max-height: 180px;
+  }
+}

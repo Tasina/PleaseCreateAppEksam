@@ -1,0 +1,23 @@
+<div ng-if="isAuthenticated()" class="row" id="menu-row">
+  <div class="menu-box">
+    <nav class="radial">
+      <input type="checkbox" id="menu">
+      <a style="opacity: 0;"><i class="icon-setting"></i></a><!-- Skal slettes når Notifications og Messages bliver aktiv -->
+      <a href="" ng-click="goSettings()"><i class="icon-edit-profile"></i></a>
+      <a href="" ng-click="goProfile()"><i class="icon-user"></i></a>
+      <a style="opacity: 0;"><i class="icon-button-notifications"></i></a><!-- Husk at fjerne Stylen når Notifications og Messages bliver aktiv -->
+      <!--<a href="" ng-click="goMessage()"><i class="icon-chat-singel"></i></a>-->
+      <label for="menu"><i class="icon-menu-btn-line"></i></label>
+    </nav>
+  </div>
+</div>
+
+<div ng-if="!isAuthenticated()" class="row" id="menu-row">
+  <div class="menu-box">
+    <div class="col col-20 col-offset-40">
+      <nav class="radial">
+        <a id="login-a" ng-click="goLogin()"><i id="log-in-icon" class="icon-sign-in"></i></a>
+      </nav>
+    </div>
+  </div>
+</div>

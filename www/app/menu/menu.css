@@ -1,0 +1,448 @@
+/*This CSS Contains*/
+
+/*--------------------Menu - Check Box--------------------*/
+/*--------------------Menu - Menu Background Gradient--------------------*/
+/*--------------------Menu - Icons--------------------*/
+/*--------------------Menu - Menu Animation--------------------*/
+/*--------------------Menu - Menu Icons Position--------------------*/
+
+/*--------------------Login Icon - Icon Position/Size--------------------*/
+
+
+
+/*****************************************************************************************************************************************************************************/
+
+
+
+/*--------------------Menu - Check Box--------------------*/
+#check2 {
+  display: none;
+}
+/*--------------------Menu - Menu Background Gradient--------------------*/
+#menu-row{
+  position: absolute;
+  bottom: 0;
+  height: 14%;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+  background:linear-gradient(rgba(180,196,159,0), rgba(180,196,159,1));
+}
+
+/*--------------------Menu - Icons--------------------*/
+i.icon-edit-profile, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+  font-size: 300%;
+  background-color: rgba(201,210,181,0.8);
+  border-radius: 50%;
+  height: auto;
+  box-shadow: 1px 1px 20px dimgrey;
+}
+nav.radial a {
+  text-decoration: none;
+}
+nav.radial > label,
+nav.radial > a {
+  position: absolute;
+  top: 0;
+  left: -4.5px;
+  color: white;
+}
+
+/*--------------------Menu - Menu Animation--------------------*/
+nav.radial a[href] {
+  transition: top 0.4s, left 0.4s, opacity 0.3s;
+  opacity: 0;
+}
+nav.radial input:checked ~ a[href] {
+  transition: top 0.4s, left 0.4s, opacity 0.3s;
+  opacity: 1;
+}
+
+/*--------------------Menu - Menu Icons Position--------------------*/
+.menu-box {
+  position: relative;
+  width: 4.5%;
+  margin: 0 auto;
+}
+nav.radial {
+  position: fixed;
+  bottom: 2%;
+  width: 100%;
+  height: 3rem;
+  z-index: 10000;
+}
+nav.radial input {
+  display: none;
+}
+nav.radial input:checked ~ a[href]:nth-of-type(1) {
+  left: -5.69615242rem;
+  top: -3rem;
+}
+nav.radial input:checked ~ a[href]:nth-of-type(2) {
+  left: -2.55212086rem;
+  top: -5.63815572rem;
+}
+nav.radial input:checked ~ a[href]:nth-of-type(3) {
+  left: 2.00212086rem;
+  top: -5.63815572rem;
+}
+nav.radial input:checked ~ a[href]:nth-of-type(4) {
+  left: 5.14615242rem;
+  top: -3rem;
+}
+nav.radial input:checked ~ a[href]:nth-of-type(5) {
+  left: 5.90884652rem;
+  top: 10.04188907rem;
+}
+
+/*--------------------Login Icon - Icon Position/Size--------------------*/
+#login-a{
+  margin: 0 auto;
+  top:0;
+}
+#log-in-icon{
+  font-size: 300%;
+}
+
+
+/*--------------------Media Query--------------------*/
+
+/*************************************** Galaxy S7 (Landscape) ***************************************/
+@media screen and (max-width: 2560px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 900%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: -80px;
+    left: -4.5px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -6.55212086rem;
+    top: -18.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 6.00212086rem;
+    top: -18.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.14615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.90884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** Galaxy S7 ***************************************/
+@media screen and (max-width: 1440px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 900%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: -80px;
+    left: -4.5px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -6.55212086rem;
+    top: -18.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 6.00212086rem;
+    top: -18.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.14615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.90884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** iPad/iPad Mini (Landscape) ***************************************/
+@media screen and (max-width: 1024px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 300%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: 0;
+    left: -0px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -2.05212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 2.05212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.19615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.40884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** iPad/iPad Mini ***************************************/
+@media screen and (max-width: 768px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 300%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: 0;
+    left: -4.5px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -2.55212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 2.00212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.14615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.90884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** iPhone 6Plus (Landscape) ***************************************/
+@media screen and (max-width: 736px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 300%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -2.65212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 2.05212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.19615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.40884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** Nexus 5X (Landscape) ***************************************/
+@media screen and (max-width: 732px) {
+
+}
+
+/*************************************** Galaxy S5 (Landscape) ***************************************/
+@media screen and (max-width: 640px) {
+
+}
+
+/*************************************** iPhone 5 (Landscape) ***************************************/
+@media screen and (max-width: 568px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 300%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -3.00212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 1.45212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.19615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.40884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** iPhone 4 (Landscape) ***************************************/
+@media screen and (max-width: 480px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 300%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -3.05212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 1.65212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.19615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.40884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** iPhone 6 Plus ***************************************/
+@media screen and (max-width: 414px) {
+  i.icon-setting, i.icon-user, i.icon-button-notifications, i.icon-chat-singel, i.icon-menu-btn-line{
+    font-size: 300%!important;
+    background-color: rgba(201,210,181,0.8);
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px dimgrey;
+  }
+  nav.radial > label,
+  nav.radial > a {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    color: white;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(1) {
+    left: -5.69615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -3.05212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 1.45212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(4) {
+    left: 5.19615242rem;
+    top: -3rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(5) {
+    left: 5.40884652rem;
+    top: 10.04188907rem;
+  }
+}
+
+/*************************************** Nexus X5/Nexus 6P ***************************************/
+@media screen and (max-width: 412px) {
+
+}
+
+/*************************************** iPhone 6 ***************************************/
+@media screen and (max-width: 375px) {
+  nav.radial input:checked ~ a[href]:nth-of-type(2) {
+    left: -3.05212086rem;
+    top: -5.63815572rem;
+  }
+  nav.radial input:checked ~ a[href]:nth-of-type(3) {
+    left: 1.25212086rem;
+    top: -5.63815572rem;
+  }
+}
+
+/*************************************** Galaxy S5 ***************************************/
+@media screen and (max-width: 360px) {
+
+}
+
+/*************************************** iPhone 4/iPhone 5 ***************************************/
+@media screen and (max-width: 320px) {
+
+}

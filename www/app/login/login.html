@@ -1,0 +1,58 @@
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+
+    <div class="profileInfo">
+      <div class="row newHeader">
+        <div class="col-20">
+          <!--<i id="back" class="icon-arrow-left" ng-click="goBack()"></i>-->
+        </div>
+        <div class="col">
+          <h1 class="please"><span style="letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">LOG</span><span style="font-weight: 500; letter-spacing: -2px;">IN</span></h1>
+        </div>
+        <div class="col-20">
+          <i id="out" class="icon-arrow-right" ng-click="goToChallenge()"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="loginDiv">
+      <div class="list2">
+        <label class="item item-input">
+          <span class="col-10 input-label ion-person loginLogo"></span>
+          <input id="login-input" placeholder="User Name" type="text" ng-model="loginForm.login">
+        </label>
+        <label class="item item-input">
+          <span class="col-10 input-label ion-android-lock loginLogo"></span>
+          <input id="login-input" placeholder="Password" type="password" ng-model="loginForm.password">
+        </label>
+        <div class="errorDiv">
+          <label class="error-message">{{loginError}}</label>
+        </div>
+      </div>
+      <div class="btnWrapper">
+        <button class="button btnGenerel btnLogin" ng-click="login()">LOGIN</button>
+      </div>
+
+      <div class="aDiv row">
+        <div class="col col-50 dragLeft">
+          <a ng-click="newMember()">New member?</a>
+        </div>
+        <div class="col col-50 dragRight">
+          <a ng-click="forgotPassword()">Forgot password?</a>
+        </div>
+      </div>
+
+      <!--Facebook Login-->
+
+      <!--<div class="bottomDiv row">
+        <div class="col col-33 col-offset-33">
+          <h4>OR</h4>
+          <label>Login With</label>
+          <img class="fbLogo" src="../img/facebooklogo.png"><img>
+        </div>
+      </div>
+    </div>-->
+
+
+  </ion-content>
+</ion-view>

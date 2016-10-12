@@ -1,0 +1,63 @@
+<pop-menu>
+</pop-menu>
+
+<ion-view view-title="Home" name="home-view">
+  <ion-content on-scroll="OnScrolling()">
+    <ion-refresher id="refreshSpinner" on-refresh="RefreshChallenges()" pulling-icon="icon ion-arrow-down-b" spinner="spiral">
+    </ion-refresher>
+
+
+    <div class="wrapper home-page">
+      <div id="ch-top" class="row profileInfo">
+        <div class="row newHeader">
+          <div class="col-10"></div>
+          <div id="PCheader" class="front col">
+            <h1 class="please"><span style="letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">PLEASE</span><span style="font-weight: 500; letter-spacing: -2px;">CREATE</span></h1>
+          </div>
+          <div class="col-10"></div>
+        </div>
+      </div>
+      <!--<div id="challenge-type-div" class="row">
+        <a class="public col col-50" style="color: dimgray!important;">Public</a>
+        <a class="private col col-50 a-right" style="color: dimgray!important;">Private</a>
+      </div>-->
+      <ion-list>
+        <ion-item id="c-card" ng-class="challenge-wrapper" on-tap="goToChallenge(challenge)" ng-repeat="challenge in showChallenges">
+          <div class="challenge-box">
+            <div ng-class="{ 'c-finished': isFinished(challenge)}">
+              <div class="challenge-bg">
+                <img ng-class="{ 'image-opacity2': isFinished(challenge)}" class="bg-image" ng-src="{{challenge.background_url}}" err-src="http://google.com/favicon.ico" style="bottom: 0;">
+                <p ng-if="isPrivate(challenge)" class="bg-text">Private</p>
+                <p ng-if="!isPrivate(challenge)" class="bg-text bgNone"></p>
+              </div>
+
+              <div class="ended-box">
+                <h1 class="ended-text">{{challengeEnd(challenge)}}</h1>
+              </div>
+
+              <div ng-class="{ 'image-opacity3': isFinished(challenge)}" class="challenge-logo">
+                <img ng-class="{ 'image-opacity': isFinished(challenge)}" class="logo-image" ng-src="{{challenge.logo_url}}" err-src="http://google.com/favicon.ico">
+              </div>
+              <div ng-class="{ 'image-opacity3': isFinished(challenge)}">
+                <h2 class="name-font">{{challenge.name}}</h2>
+              </div>
+              <div ng-class="{ 'image-opacity2': isFinished(challenge)}" class="row topic-box">
+                <div class="col-40 topic-text1">
+                  <i class="star icon-star"><span>&nbsp;{{challenge.challengePrice}}</span></i>
+                </div>
+                <div class="col-20 topic-text2">
+                  <i class="ideas icon-bulb-light"><span>&nbsp;{{challenge.topic_count}}</span></i>
+                </div>
+                <div class="col-40 topic-text3">
+                  <i class="clock icon-clock"><span>&nbsp;{{showDays(challenge)}}</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-item>
+        <ion-infinite-scroll immediate-check="true" distance="1%" on-infinite="loadMoreData()" ng-if="!nodata"></ion-infinite-scroll>
+      </ion-list>
+    </div>
+
+  </ion-content>
+</ion-view>

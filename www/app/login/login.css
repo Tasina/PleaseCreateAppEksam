@@ -1,0 +1,364 @@
+/*This CSS contains*/
+
+/*--------------------Create Account Headline--------------------*/
+/*--------------------Create Account Back Button--------------------*/
+/*--------------------Create Account Profile Image--------------------*/
+/*--------------------Create Account Input--------------------*/
+/*--------------------Create Account Confirm Icons--------------------*/
+/*--------------------Create Account "Create Account" Button--------------------*/
+
+/*--------------------Login Div--------------------*/
+/*--------------------Login/Create Account Input Icon--------------------*/
+/*--------------------Login Input--------------------*/
+/*--------------------Login "Login" Button--------------------*/
+/*--------------------Login Error Message--------------------*/
+/*--------------------Login "New Member" And "Forgot Password" Links--------------------*/
+/*--------------------Login Facebook Login--------------------*/
+/*--------------------Login Facebook "OR"--------------------*/
+/*--------------------Login Facebook Icon--------------------*/
+
+/*--------------------Reset Password Input--------------------*/
+/*--------------------Reset Password "Reset" Button--------------------*/
+/*--------------------Reset Password Error Message--------------------*/
+/*--------------------Reset Password Message Box--------------------*/
+
+
+
+/*****************************************************************************************************************************************************************************/
+
+
+
+/*--------------------Create Account Headline--------------------*/
+#headline2{
+  padding-top:5%;
+}
+#headline2 h1{
+  font-size: 200%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+/*--------------------Create Account Back Button--------------------*/
+i.icon-arrow-left{
+  color: white;
+}
+
+/*--------------------Create Account Profile Image--------------------*/
+.profile img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  border: 2px white solid;
+}
+
+/*--------------------Create Account Input--------------------*/
+.item {
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 2% 0 2% 5%;
+}
+.list2 {
+  margin-top: 5%;
+}
+
+/*--------------------Create Account Confirm Icons--------------------*/
+.dialogIcon {
+  background: transparent;
+  margin-right: -25%;
+  display: block;
+}
+
+/*--------------------Create Account "Error Message"--------------------*/
+.errorBox {
+  width: 100%;
+}
+.errorMessage {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5%;
+  color: red;
+}
+
+/*--------------------Create Account "Create Account" Button--------------------*/
+.btnWrapper {
+  text-align: center;
+}
+.btnCreate {
+  width: 65%;
+  margin-top: 6%;
+}
+
+/*--------------------Login Div--------------------*/
+.loginDiv {
+  padding-top: 7%;
+  margin: 25% 10% 0 10%;
+}
+i.icon-arrow-right {
+  padding: 0 0 10px 10px;
+  font-size: 40px;
+}
+.please2 {
+
+}
+
+/*--------------------Login/Create Account Input Icon--------------------*/
+.loginLogo {
+  font-size: 1.8em;
+  margin-right: 5%;
+  text-align: center;
+  padding: 2% 0 2% 0;
+}
+
+.item-input *, .item-input * {
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+}
+
+/*--------------------Login Input--------------------*/
+#login-input{
+  color:dimgrey!important;
+  font-size: 1em;
+  padding-right: 0;
+}
+
+/*--------------------Login "Login" Button--------------------*/
+.btnLogin {
+  width: 85%;
+  margin-top: 6%;
+}
+
+/*--------------------Login Error Message--------------------*/
+.errorDiv{
+  margin-top: 4%;
+  text-align: center;
+}
+
+/*--------------------Login "New Member" And "Forgot Password" Links--------------------*/
+.aDiv {
+  font-size: 50%!important;
+  width: 100%;
+  margin-top: 10%;
+  padding: 0;
+  color: black;
+}
+.col-50 {
+  text-align: center!important;
+}
+
+/*--------------------Login Facebook Login--------------------*/
+.bottomDiv {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+/*--------------------Login Facebook "OR"--------------------*/
+.bottomDiv h4 {
+  color: white;
+  font-weight: normal;
+  margin: 30% 0;
+}
+
+/*--------------------Login Facebook Icon--------------------*/
+.fbLogo {
+  margin-top: 30%;
+  width: 50%;
+}
+
+/*--------------------Reset Password Input--------------------*/
+.forgot_body {
+  padding-top: 12%;
+}
+
+.item-input ::-webkit-input-placeholder{
+  color:white;
+}
+
+/*--------------------Reset Password "Reset" Button--------------------*/
+.btnForgot {
+  width: 85%;
+  margin-top: 8%;
+}
+
+/*--------------------Reset Password Error Message--------------------*/
+label.item.has-error {
+  border-bottom: 2px solid red;
+}
+.error-container {
+  margin: 0;
+}
+.error {
+  padding: 8px 8px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #555;
+  vertical-align: middle;
+}
+.error i {
+  font-size: 24px;
+  color: #B83E2C;
+  vertical-align: middle;
+}
+.last-error-container > .error {
+  padding: 10px 16px 0;
+}
+.has-errors .dialogIcon {
+  color: #B83E2C;
+}
+.no-errors .dialogIcon {
+  color: green;
+}
+.information_text {
+  font-size: 2.5vw;
+  margin-left: 2%;
+  text-align: left !important;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------Reset Password Message Box--------------------*/
+.show_this_information {
+  display: none;
+  margin-left: 20%;
+  margin-top: -10%;
+  padding: 0;
+  position: fixed;
+  text-align: right;
+  background: #828c76;
+  border: 1px solid #4a5044;
+  width: 60%;
+}
+.forgot_body {
+  margin: 10%;
+  text-align: center !important;
+}
+.forgot_text {
+  margin-top: 15%;
+  width: 100%;
+}
+.forgot_input {
+  margin-top: 10%;
+  padding: 0;
+}
+input[type="forgot"] {
+  text-align: center;
+}
+.error-message{
+  color:red;
+}
+
+
+/*--------------------Media Query--------------------*/
+
+/*************************************** Galaxy S7 (Landscape) ***************************************/
+@media screen and (max-width: 2560px) {
+
+}
+
+/*************************************** Galaxy S7 ***************************************/
+@media screen and (max-width: 1440px) {
+
+}
+
+/*************************************** iPad/iPad Mini (Landscape) ***************************************/
+@media screen and (max-width: 1024px) {
+  #headline {
+    padding-top: 10%;
+  }
+  .aDiv {
+    font-size: 150%!important;
+  }
+  .loginDiv {
+    padding: 0;
+  }
+}
+
+/*************************************** iPad/iPad Mini ***************************************/
+@media screen and (max-width: 768px) {
+  #headline {
+    padding-top: 22%;
+  }
+  .aDiv {
+    font-size: 150%!important;
+  }
+  .loginDiv {
+    padding-top: 7%;
+  }
+}
+
+/*************************************** iPhone 6Plus (Landscape) ***************************************/
+@media screen and (max-width: 736px) {
+  #headline {
+    padding-top: 5%;
+  }
+  .aDiv {
+    font-size: 100%!important;
+  }
+  .loginDiv {
+    padding: 0;
+    margin-bottom: 10%;
+  }
+}
+
+/*************************************** Nexus 5X (Landscape) ***************************************/
+@media screen and (max-width: 732px) {
+
+}
+
+/*************************************** Galaxy S5 (Landscape) ***************************************/
+@media screen and (max-width: 640px) {
+
+}
+
+/*************************************** iPhone 5 (Landscape) ***************************************/
+@media screen and (max-width: 568px) {
+
+}
+
+/*************************************** iPhone 4 (Landscape) ***************************************/
+@media screen and (max-width: 480px) {
+
+}
+
+/*************************************** iPhone 6 Plus ***************************************/
+@media screen and (max-width: 414px) {
+  #headline {
+    padding-top: 22%;
+  }
+  .aDiv {
+    font-size: 100%!important;
+  }
+  .loginDiv {
+    padding-top: 7%;
+  }
+}
+
+/*************************************** Nexus X5/Nexus 6P ***************************************/
+@media screen and (max-width: 412px) {
+
+}
+
+/*************************************** iPhone 6 ***************************************/
+@media screen and (max-width: 375px) {
+
+}
+
+/*************************************** Galaxy S5 ***************************************/
+@media screen and (max-width: 360px) {
+
+}
+
+/*************************************** iPhone 4/iPhone 5 ***************************************/
+@media screen and (max-width: 320px) {
+
+}

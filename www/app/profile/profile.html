@@ -1,0 +1,87 @@
+<ion-view view-title="Profile">
+  <ion-content>
+    <ion-refresher id="refreshSpinner" on-refresh="RefreshProfile()" pulling-icon="icon ion-arrow-down-b" spinner="spiral">
+    </ion-refresher>
+
+    <div class="wrapper2">
+      <div class="topProfileDiv2 row">
+        <img src="{{loggedInUser.myAvatar}}">
+        <div class="profileInfo">
+          <div class="row newHeader">
+            <div class="col-20">
+              <i id="back" class="icon-arrow-left" ng-click="goChallenges()"></i>
+            </div>
+            <div class="front col">
+              <h1 class="please"><span style="letter-spacing: 1px; font-family: Raleway;  font-weight: 200;">MY</span><span style="font-weight: 500; letter-spacing: -2px;">PROFILE</span></h1>
+            </div>
+            <div class="col-20">
+              <i id="out" class="icon-sign-out" ng-click="showSignout()"></i>
+            </div>
+          </div>
+          <div class="nameLocation">
+            <h1 class="white nameHeader">{{loggedInUser.name}}</h1>
+            <h4 class="white professionHeader cursive" style="color: white!important; padding-top: 15%;">{{loggedInUser.location}}</h4>
+          </div>
+          <div class="row historyDiv">
+            <div class="col-33 likesNr nr">
+              <h1><strong>{{userSummary.post_count}}</strong></h1>
+              <label>Comments</label>
+            </div>
+            <div class="col-33 ideasNr nr">
+              <h1><strong>{{userSummary.topic_count}}</strong></h1>
+              <label>Ideas</label>
+            </div>
+            <div class="col-33 commentsNr nr">
+              <h1><strong>{{userSummary.likes_given}}</strong></h1>
+              <!--/ {{userSummary.likes_received}} -->
+              <label>Likes</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="profileBottom">
+        <!--<div class="options row">
+          <div class="col-50">
+            <button ng-click="showRecieved()" class="btnGenerel btnProfile greenFontColor">Recieved</button>
+          </div>
+          <div class="col-50">
+            <button ng-click="showGiven()" class="btnGenerel btnProfile greenFontColor">Given</button>
+          </div>
+        </div>-->
+
+        <ion-list id="notificationList">
+          <ion-item ng-class="{true: 'sitem', false: 'sitemRead'}[n.read]" ng-repeat="n in shownNotification" ng-click="goToIdea(n.topic_id)">
+            <div>
+              <div class="icon-box col-20">
+                <i ng-if="isLike(n)" class="heart2 icon-heart-color"></i>
+                <i ng-if="isComment(n)" class="chat2 icon-chat-singel-color"></i>
+                <i ng-if="!isIdea(n)" class="bulb2 icon-bulb-light-color"></i>
+              </div>
+              <div class="row itemText">
+                <label class="label-text col">
+                  {{n.data.original_username}}<strong> {{n.textToPast }} </strong>({{n.data.topic_title}})
+                </label>
+              </div>
+              <div class="row itemInfo">
+                <div class="iconCol col-10">
+                  <i class="ion-clock"><lable class="days"> {{n.created_at | number: 0}} {{n.sinceText}}</lable></i>
+                </div>
+                <div class="infoCol col-40"></div>
+                <div class="iconCol col-10">
+                  <i class="ion-ios-chatbubble-outline"><lable class="days"> {{n.topicsdata.posts_count}}</lable></i>
+                </div>
+                <div class="infoCol col-10"></div>
+                <div class="iconCol col-10">
+                  <i class="ion-ios-heart-outline"><lable class="days"> {{n.topicsdata.like_count}}</lable></i>
+                </div>
+                <div class="infoCol col-10"></div>
+              </div>
+            </div>
+          </ion-item>
+          <ion-infinite-scroll distance="10%" on-infinite="loadMoreData()" icon="none" ng-if="!nodata"></ion-infinite-scroll>
+        </ion-list>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
